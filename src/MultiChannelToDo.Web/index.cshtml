@@ -22,7 +22,20 @@
         });
 
         window.appInsights = appInsights;
+
+        // Begin new code
+        appInsights.queue.push(function () {
+            appInsights.context.addTelemetryInitializer(function (envelope) {
+                var telemetryItem = envelope.data.baseData;
+                telemetryItem.properties = telemetryItem.properties || {};
+                telemetryItem.properties["Environment"] = "@System.Configuration.ConfigurationManager.AppSettings["environment"]";
+            });
+        });
+        // End new code
+
+
         appInsights.trackPageView();
+
     </script>
 
 </head>

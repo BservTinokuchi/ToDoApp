@@ -1,0 +1,30 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "siteName": {
+            "value": "ToDoApp59783beta"
+        },
+        "hostingPlanName": {
+            "value": "ASP59783beta"
+        },
+        "siteLocation": {
+            "value": "West US"
+        },
+        "repoUrl": {
+            "value": "https://github.com/BservTinokuchi/ToDoApp.git"
+        },
+        "branch": {
+            "value": "beta"
+        },
+        "sqlServerName": {
+            "value": "todoappsql-59783beta"
+        },
+        "sqlDbName": {
+            "value": "DemosDB"
+        },
+        "slotName": {
+            "value": "beta"
+        }
+    }
+}

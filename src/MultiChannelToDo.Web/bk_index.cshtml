@@ -48,7 +48,7 @@
         <div class="check-list-container">
             <div class="check-list-item-container">
                 <ul class="list-group">
-                    <li id="check-list-item-{{item.Id}}" style="cursor:pointer" ng-repeat="item in items" ng-hide="{{item.Complete}}" ng-click="complete(item)" class="list-group-item"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> {{item.Text}}</li>
+                    <li id="check-list-item-{{item.Id}}" ng-repeat="item in items" ng-hide="{{item.Complete}}" ng-click="complete(item)" class="list-group-item"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> {{item.Text}}</li>
                 </ul>
             </div>
         </div>

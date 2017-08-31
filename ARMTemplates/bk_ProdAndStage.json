@@ -166,8 +166,7 @@
                     "properties": {
                         "appSettingNames": [
                             "clientUrl",
-                            "PROJECT",
-                            "environment"
+                            "PROJECT"
                         ]
                     }
                 },
@@ -190,8 +189,7 @@
                             ],
                             "properties": {
                                 "PROJECT": "src\\MultiChannelToDo\\MultiChannelToDo.csproj",
-                                "clientUrl": "[concat('http://', reference(resourceId('Microsoft.Web/Sites/Slots', parameters('siteName'), parameters('slotName'))).hostNames[0])]",
-                                "environment": "[parameters('slotName')]"
+                                "clientUrl": "[concat('http://', reference(resourceId('Microsoft.Web/Sites/Slots', parameters('siteName'), parameters('slotName'))).hostNames[0])]"
                             }
                         },
                         {
@@ -246,8 +244,7 @@
                         "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
                     ],
                     "properties": {
-                        "apiPath": "[concat('http://', reference(resourceId('Microsoft.Web/Sites', variables('apiSiteName'))).hostNames[0], '/api')]",
-                        "environment": "[parameters('slotName')]"
+                        "apiPath": "[concat('http://', reference(resourceId('Microsoft.Web/Sites', variables('apiSiteName'))).hostNames[0], '/api')]"
                     }
                 },
                 {
@@ -260,8 +257,7 @@
                     "properties": {
                         "appSettingNames": [
                             "apiPath",
-                            "PROJECT",
-                            "environment"
+                            "PROJECT"
                         ]
                     }
                 },
